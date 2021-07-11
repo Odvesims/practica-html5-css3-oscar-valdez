@@ -5,7 +5,7 @@
 * CSS3
 
 # Assets
-FontAwesome
-Google Fonts
-Youtube Videos
+* FontAwesome
+* Google Fonts
+* Youtube Videos
 
