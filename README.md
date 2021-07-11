@@ -1,6 +1,6 @@
 # Práctica de Fundamentos Básicos de CSS3 y HTML5
 
-#Tecnologías Usadas:
+# Tecnologías Usadas:
 HTML5
 CSS3
 
