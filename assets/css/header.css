@@ -1,0 +1,17 @@
+.header {
+  height: 30vh;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin-top: 2rem;
+}
+
+.header-img {
+  height: 200px;
+  width: 100%;
+  object-fit:cover;
+  object-position: left top;
+}

@@ -1,0 +1,124 @@
+.nav-bar {
+  position: fixed;
+  height: var(--nav-bar-height);
+  line-height: var(--nav-bar-height);
+  background-color: var(--navbar-bg);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-div {
+  display: inline-block;
+  margin-top: .3rem;
+}
+
+.logo {
+  line-height: var(--navbar-size);
+  height: 30px;
+  align-self: left;
+}
+
+.burger-menu-label {
+  position: absolute;
+  float: right;
+  top: .5rem;
+  right: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.burger-menu-label::before {
+  content: "";
+  background-color: lightblue;
+  box-shadow: 0 0.5rem 0 0 lightblue, 0 1rem 0 0 lightblue;
+  width: 2rem;
+  height: .2rem;
+  float: right;
+}
+
+.nav-search {
+  display: inline-block;
+  color: black;
+  border: none;
+  margin-left: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 20rem;
+}
+
+.nav-list {
+  margin-top: 0.5rem;
+  float: right;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:hover {
+  background-color: var(--terciary-bg);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+/* CLOSE RESPONSIVE MENÚ */
+
+#burger-menu-checkbox {
+  display: none;
+}
+
+/* OPEN RESPONSIVE MENU */
+#burger-menu-checkbox:checked ~ .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--nav-bar-height));
+  width: 100%;
+  opacity: .85;
+}
+#burger-menu-checkbox:checked ~ .nav-search {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 480px) {
+  .burger-menu-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .burger-menu-label {
+    display: inline-block;
+  }
+  .nav-search {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-item a {
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

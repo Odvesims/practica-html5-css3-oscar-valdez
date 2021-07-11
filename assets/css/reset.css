@@ -1,0 +1,25 @@
+* ::after ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+}
+
+img, video {
+  max-width: 100%;
+}
+
+/* VARIABLES */
+
+:root {
+  --navbar-bg: black;
+  --main-bg: #0B1015;
+  --primary-bg: #272643;
+  --secondary-bg: #2C698D;
+  --terciary-bg: slategray;
+  --secondary-hover-bg: #2C693D;
+  --nav-bar-height: 50px;
+}

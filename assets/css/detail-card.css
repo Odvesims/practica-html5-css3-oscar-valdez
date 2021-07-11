@@ -1,0 +1,84 @@
+.card {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: black;
+}
+
+.card-video {
+  object-fit:cover;
+  width: 100%;
+  height: 75%;
+  z-index: 1;
+}
+
+.card:hover .card-title, .card:hover .card-rating, .card:hover .card-brief,  .card:hover .favorite-item-wrapper, .card:hover .card-year{
+  visibility: visible;
+}
+
+.card-title {
+  visibility: hidden;
+}
+
+.card-rating {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+}
+
+.card-brief {
+  position: absolute;
+  visibility: hidden;
+  z-index: 500;
+}
+
+.card-title > a {
+  color: white;
+}
+
+.like-button {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 2rem;
+  height: 3rem;
+}
+
+.like-icon {
+  font-size: 1.8rem;
+}
+
+.favorite-item-wrapper{
+  cursor: pointer;
+  z-index: 100;
+  visibility: hidden;
+  display: inline-block;
+}
+
+.marked {
+  display: none;
+}
+
+.like-button:checked ~ .favorite-item-wrapper > .unmarked {
+  display: none;
+}
+
+.like-button:checked ~ .favorite-item-wrapper > .marked {
+  display: inline;
+}
+
+.card-year {
+  font-size: 1.2rem;
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .card-brief {
+    display: none;;
+  }
+}
